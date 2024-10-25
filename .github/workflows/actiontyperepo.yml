@@ -8,12 +8,19 @@ on:
 jobs:
   print-message:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
 
       - name: Print environment variable
-        run: echo Environment Variable: ${{ env.MY_ENV_VARIABLE }}
+        env:
+          MY_ENV_VARIABLE: ${{ secrets.MY_ENV_VARIABLE }}
+        run: |
+          echo "Environment Variable: $MY_ENV_VARIABLE"
 
       - name: Print secret variable
-        run: echo Secret Variable: ${{ secrets.MY_SECRET_VARIABLE }}
+        env:
+          MY_SECRET_MESSAGE: ${{ secrets.MY_SECRET_MESSAGE }}
+        run: |
+          echo "Secret Variable: $MY_SECRET_MESSAGE"
