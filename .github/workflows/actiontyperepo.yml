@@ -1,0 +1,19 @@
+name: PR Message
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  print-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Print environment variable
+        run: echo "Environment Variable: ${{ env.MY_ENV_VARIABLE }}"
+
+      - name: Print secret variable
+        run: echo "Secret Variable: ${{ secrets.MY_SECRET_VARIABLE }}"
