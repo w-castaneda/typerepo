@@ -123,6 +123,13 @@ Week 1 - Homework
 
 
 
+18 - 2 Branches Created.
+
+![image](https://github.com/user-attachments/assets/0a1a41d3-ba9b-4dfa-b9c9-d1cfa645eeea)
+
+
+
+
 
 
 
