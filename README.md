@@ -1,5 +1,5 @@
 # typerepo
-Week 1 - Homework
+
 1 - Repository Creation
 
 ![1 - Repository Creation](https://github.com/user-attachments/assets/3eef3247-17c6-4882-af68-831a92e75c23)
